@@ -1,1 +1,6 @@
 venv/
+__pycache__/
+*.db
+migrations/
+!migrations/versions/__init__.py 
+alembic.ini
