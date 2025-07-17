@@ -11,7 +11,7 @@ class Category(Base):
     slug:Mapped[str] = mapped_column(String(60), index=True, unique=True)
     is_active:Mapped[bool] = mapped_column(Boolean(), default=True)
 
-    products = relationship("Product", back_populates='category', uselist=True)
+    products = relationship("Products", back_populates='category', uselist=True)
 
 
 
